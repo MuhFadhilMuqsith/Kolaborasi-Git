@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="org.d3ifcool.test.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_mainFragment3"
+            app:destination="@id/mainFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="org.d3ifcool.test.MainFragment2"
+        android:label="MainFragment2" />
+    <fragment
+        android:id="@+id/mainFragment3"
+        android:name="org.d3ifcool.test.MainFragment3"
+        android:label="MainFragment3" />
+    <fragment
+        android:id="@+id/about_menu"
+        android:name="org.d3ifcool.test.fragment_menu"
+        android:label="fragment_menu" />
+</navigation>
